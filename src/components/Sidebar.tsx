@@ -10,8 +10,6 @@ import { Avatar, Box, Divider, Drawer, List } from '@mui/material';
 import logo from '../assets/logo.png';
 import NavLink from './NavLink';
 
-const drawerWidth = 160;
-
 const navigationItems = [
   { path: '/', icon: <DashboardOutlined />, name: 'Dashboard' },
   { path: '/findings', icon: <TuneOutlined />, name: 'Findings' },
@@ -29,13 +27,26 @@ const Sidebar = () => {
     <Drawer
       variant="permanent"
       sx={{
-        'width': drawerWidth,
+        'width': {
+          xl: 160,
+          lg: 120,
+          md: 100,
+          sm: 80,
+          xs: 60,
+        },
         'flexShrink': 0,
         '& .MuiDrawer-paper': {
-          width: drawerWidth,
+          width: {
+            xl: 160,
+            lg: 120,
+            md: 100,
+            sm: 80,
+            xs: 60,
+          },
           boxSizing: 'border-box',
           bgcolor: '#F9F8FF',
           borderRight: '0px solid transparent',
+          transition: 'all 0.3s ease-in-out',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
