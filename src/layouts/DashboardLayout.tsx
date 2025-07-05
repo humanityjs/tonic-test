@@ -20,7 +20,7 @@ const DashboardLayout = () => {
         }}
       >
         {/* Page Content */}
-        <Box sx={{ py: '38px', pl: '8px' }}>
+        <Box sx={{ py: '38px', pl: '8px', pr: '35px' }}>
           <Outlet />
         </Box>
       </Box>
