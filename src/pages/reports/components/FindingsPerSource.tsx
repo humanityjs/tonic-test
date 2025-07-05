@@ -23,7 +23,19 @@ const severityData = [
 
 function FindingsPerSource() {
   return (
-    <Box sx={{ maxHeight: '100%', overflow: 'scroll', pr: '30px' }}>
+    <Box
+      sx={{
+        maxHeight: {
+          xl: '100%',
+          lg: '100%',
+          md: '261px',
+          sm: '261px',
+          xs: '261px',
+        },
+        overflow: 'scroll',
+        pr: '30px',
+      }}
+    >
       <Typography
         variant="h6"
         sx={{

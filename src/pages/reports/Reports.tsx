@@ -88,7 +88,13 @@ const Reports = () => {
       <Fade in={true} timeout={800}>
         <Box
           sx={{
-            'display': 'grid',
+            'display': {
+              xl: 'grid',
+              lg: 'grid',
+              md: 'flex',
+              sm: 'flex',
+              xs: 'flex',
+            },
             'gridTemplateColumns': 'repeat(3, 1fr)',
             'gap': 3,
             'bgcolor': '#fff',
@@ -96,10 +102,17 @@ const Reports = () => {
             'borderRadius': '12px',
             'boxShadow': '0 4px 12px 0 rgba(0,0,0,0.05)',
             'padding': '20px',
-            'height': '261px',
+            'height': {
+              xl: '261px',
+              lg: '261px',
+              md: 'auto',
+              sm: 'auto',
+              xs: 'auto',
+            },
             'overflow': 'hidden',
             'position': 'relative',
             'transition': 'all 0.3s ease-in-out',
+            'flexDirection': 'column',
             '&:hover': {
               boxShadow: '0 8px 24px 0 rgba(0,0,0,0.1)',
               transform: 'translateY(-2px)',

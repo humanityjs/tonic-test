@@ -14,10 +14,29 @@ function FindingsBySeverity() {
   return (
     <Box
       sx={{
-        maxHeight: '100%',
+        maxHeight: {
+          xl: '100%',
+          lg: '100%',
+          md: '261px',
+          sm: '261px',
+          xs: '261px',
+        },
         overflow: 'scroll',
         pr: '30px',
-        borderRight: '1px solid #E2E2EA',
+        borderRight: {
+          xl: '1px solid #E2E2EA',
+          lg: '1px solid #E2E2EA',
+          md: 'none',
+          sm: 'none',
+          xs: 'none',
+        },
+        borderBottom: {
+          xl: 'none',
+          lg: 'none',
+          md: '1px solid #E2E2EA',
+          sm: '1px solid #E2E2EA',
+          xs: '1px solid #E2E2EA',
+        },
       }}
     >
       <Typography
